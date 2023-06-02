@@ -24,8 +24,8 @@ a{
 }
 
 a:hover {
-	color:#5aa; /* Цвет ссылок при наведении */
-	border-bottom-width: 3px; /* Толщина линии снизу */
+	color:#5aa; 
+	border-bottom-width: 3px; 
 }
 
 h1{
