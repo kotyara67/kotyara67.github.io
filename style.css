@@ -11,12 +11,21 @@ body{
 	
 }
 
-p{
+p, a{
 	font-size: 16px;
 	color: #ddd;
 	line-height: 2;
 	letter-spacing: 1px;
 	text-shadow: 3px 3px 1px #444;
+}
+
+a{
+	transition: 0.5s;
+}
+
+a:hover {
+	color:#5aa; /* Цвет ссылок при наведении */
+	border-bottom-width: 3px; /* Толщина линии снизу */
 }
 
 h1{
@@ -30,4 +39,10 @@ h1{
 img{
 	border-radius: 10px;
 	border: 5px solid #444;
+}
+
+.social_links{
+	border-radius: 10px;
+	border: 5px solid #444;
+	margin: 20px;
 }
