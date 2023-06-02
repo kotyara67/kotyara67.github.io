@@ -1,10 +1,10 @@
 body{
 	background-color: #111;
 	font-family: "Comic Sans MS", sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	width: 800px;
 	margin: 20px auto;
-	padding: 0px 20px 20px 20px;
+	padding: 0px 0px 20px 20px;
 	border: 5px solid #ddd;
 	border-radius: 10px;
 	text-align: center;
@@ -12,9 +12,9 @@ body{
 }
 
 p, a{
-	font-size: 16px;
+	font-size: 24px;
 	color: #ddd;
-	line-height: 2;
+	line-height: 1;
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 1px #444;
 }
@@ -24,19 +24,19 @@ a{
 }
 
 a:hover {
-	color:#5aa; 
+	color:#5fa; 
 	border-bottom-width: 3px; 
 }
 
 h1{
-	font-size: 30px;
+	font-size: 40px;
 	color: #ddd;
-	line-height: 2;
+	line-height: 1;
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 1px #444;
 }
 
-img{
+.border_img{
 	border-radius: 10px;
 	border: 5px solid #444;
 }
