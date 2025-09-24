@@ -39,7 +39,7 @@ h1{
 
 }
 
-.photo img{
+img{
 	width: 100%;
 	position: absolute;
 	opacity: 0;
@@ -47,7 +47,7 @@ h1{
 	transform: opacity 500ms;
 }
 
-.photo img.shown {
+img.shown {
 	opacity: 1;
 }
 

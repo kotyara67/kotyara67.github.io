@@ -23,14 +23,22 @@ window.onload = function(){
     // //     this.btPrev.addEventListener('click', this.prev)
     // // }
 
+    function next(){
+        
+    }
+
+    function prev(){
+        
+    }
+
     class Slider{
-        constructor(obj) {
+        constructor() {
             this.images = document.querySelectorAll('img')
             this.btNext = document.querySelector('.next')
             this.btPrev = document.querySelector('.prev')
             this.delay = obj.delay
             this.i = 0
-            this.btNext.addEventListener('click', this.next.bind(this))
+            this.btNext.addEventListener('click', )
             this.btPrev.addEventListener('click', this.next.bind(this))
 
             next = function(){
