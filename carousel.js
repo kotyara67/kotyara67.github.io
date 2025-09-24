@@ -24,11 +24,11 @@ window.onload = function(){
     // // }
 
     function next(){
-        
+        console.log("asd")
     }
 
     function prev(){
-        
+        console.log("dsa")
     }
 
     class Slider{
@@ -38,8 +38,8 @@ window.onload = function(){
             this.btPrev = document.querySelector('.prev')
             this.delay = obj.delay
             this.i = 0
-            this.btNext.addEventListener('click', )
-            this.btPrev.addEventListener('click', this.next.bind(this))
+            this.btNext.addEventListener('click', next)
+            this.btPrev.addEventListener('click', prev)
 
             next = function(){
                 console.log("a")
