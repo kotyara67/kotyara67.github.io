@@ -7,18 +7,47 @@
 	<body>
 		<h1>🔰 Hello World 🔰</h1>
 		<p>Tis site is hosted with GitHub Pages.</p>
-		<div class="carousel">
-			<div class="photo">
-				<img src="carousel/1.jpg" class="shown"></div>
-				<img src="carousel/2.jpg" ></div>
-				<img src="carousel/3.jpg" ></div>
-				<img src="carousel/4.jpg" ></div>
-			</div>
-			<div class="tabs">
-				<input type="button" class="prev" value="⏮">
-				<input type="button" class="next" value="⏭">
-			</div>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 4</div>
+			<img src="./carousel/1.jpg" style="width:100%; height:520px;">
 		</div>
-		<script src="carousel.js"></script>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 4</div>
+			<img src="./carousel/2.jpg" style="width:100%; height:520px;">
+
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 4</div>
+			<img src="./carousel/3.jpg" style="width:100%; height:520px;">
+
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 4</div>
+			<img src="./carousel/4.jpg" style="width:100%; height:520px;">
+
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+		<script src="./carousel.js"></script>
 	</body>
 </html>

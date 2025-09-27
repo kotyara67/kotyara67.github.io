@@ -1,53 +1,28 @@
-window.onload = function(){
-    // new Slider({
-    //     images: '.carousel .photo img',
-    //     next: '.carousel .tabs .next',
-    //     prev: '.carousel .tabs .prev',
-    //     delay: '2500'
-    // })
-    // // function Slider(obj){
-    // //     this.images = document.querySelectorAll(obj.images)
-    // //     this.btNext = document.querySelector(obj.next)
-    // //     this.btPrev = document.querySelector(obj.prev)
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    // //     this.next = function(){
-    // //         console.log("asd")
-    // //     }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    // //     this.prev = function(){
-    // //         console.log("das")
-    // //     }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    // //     this.btNext.addEventListener('click', this.next)
-
-    // //     this.btPrev.addEventListener('click', this.prev)
-    // // }
-
-    function next(){
-        console.log("asd")
-    }
-
-    function prev(){
-        console.log("dsa")
-    }
-
-    class Slider{
-        constructor() {
-            this.images = document.querySelectorAll('img')
-            this.btNext = document.querySelector('.next')
-            this.btPrev = document.querySelector('.prev')
-            this.delay = obj.delay
-            this.i = 0
-            this.btNext.addEventListener('click', next)
-            this.btPrev.addEventListener('click', prev)
-
-            next = function(){
-                console.log("a")
-            }
-
-            prev = function(){
-                console.log("b")
-            }
-        }
-    }
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
